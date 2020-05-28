@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/style3.css">
+
+
+
+</head>
+
+<body>
+    <script>
+        function showhideOnlinepay(){
+            if(document.getElementById('onpay').checked){
+                document.getElementById('Online Payment').style.display='block'; 
+            }else{
+                document.getElementById('Online Payment').style.display='none';
+            }
+        }
+    </script>
+    <div class="nav-container">
+        <div class="nav-content">
+        <!----logo image-->
+        <div class="icon">
+        <img src="img/iconv.png" height="60px" width="150px">
+        </div>
+        <!----menu-->
+        <div class="menu">
+        <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="log.html">LOG IN</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        </div>
+        <!----cart---->
+        <div class="cart">
+        <img src="images/cart.png">
+        <a href="#">CART</a>
+        </div>
+        </div>    
+        </div>
+<h2 class="heading">SHIPPING FORM</h2>
+
+<div class="row">
+
+  <div class="col-75">
+
+    <div class="container">
+
+      <form action="/action_page.php">
+
+      
+
+        <div class="row">
+
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname"
+                   placeholder="Nisha Mishra">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="​​nish12@gmail.com">
+            <label for="mobile"><i class="fa fa-mobile"></i> Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" placeholder="8767890545">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 Mount Eden Building,15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Delhi">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Delhi">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> 
+           Shipping address same as billing
+        </label>
+        <div class="payment-option">
+        <p><b>Payment Option</b></p>
+        <input type="checkbox" name="cash on delievery"> 
+        Cash on Delivery<br>
+        <input type="checkbox" id="onpay" name="online payment" value="yes" onclick="showhideOnlinepay()" > 
+        Online Payment
+        </div>
+        <fieldset id="Online Payment">
+            <div class="col-50">
+                <h3><b>Online Payment</b></h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" 
+                        placeholder="Nisha Mishra">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" 
+                      placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" 
+                   placeholder="October">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2022">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="678">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </fieldset>
+        <a href="order.html"><input type="button" value="ORDER NOW" class="btn"></a>
+      </form>
+    </div>
+</div>
+</div>
+<!---------footer---->
+<div class="footer">
+  <div class="nav-content">
+      <!----logo image-->
+      <div class="icon">
+      <img src="img/iconv.png" height="60px" width="150px">
+      </div>
+      <!----menu-->
+      <div class="menu footer-menu">
+      <p>For more food blogs follow our social media handles</p>
+      </div>
+      <!----cart---->
+      <div class="social">
+      <ul>
+        <li><a href="https://youtube.com" target="_blank"><img src="img/fnb2.png"></a></li>
+        <li><a href="https://facebook.com" target="_blank"><img src="img/fn1.png"></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="img/fnb3.png"></a></li>
+      </ul> 
+      </div>
+      </div>     
+<div class="copyright">
+<p>copyright 2020 pizza Theme.Going to internet</p>
+</div>
+</div>
+</body>
+</html>

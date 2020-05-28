@@ -1,0 +1,280 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    font-size: 17px; 
+    /* background-image: url("images/green-background.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+  .nav-container{
+    width:100%;
+    height: 55px;
+    background-color:rgba(233,33,97,1);
+    box-shadow: 2px,2px 12px maroon;
+}
+.nav-container a:hover{
+  background-color:black;
+}
+.nav-content{
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12%;
+}
+
+.cart img{
+    height:30px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li a {
+    padding:0px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 20;
+}
+.cart a{
+    color: white;
+    margin: 0px 10px;
+}
+.cart img{
+    height: 30px;
+}
+  .heading{
+      text-align: center;
+      color:red;
+      font-weight: bold;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color:lightcoral;
+    padding: 3px 18px 13px 18px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color:rgba(233,33,97,1);
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  .thanks p{
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    color:crimson;
+    margin-top: 60px;
+}
+.feedback p{
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 110px;
+    margin-left: 590px;
+}
+.center{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.center .stars{
+    height: 150px;
+    width: 500px;
+    background-color:white;
+    text-align: center;
+}
+.stars input{
+    display:none;
+}
+.stars label{
+    float: right;
+    font-size: 100px;
+    color: lightgrey;
+    margin:0 5px;
+    text-shadow: 1px 1px #bbb;
+}
+.stars label:before{
+    content:'★';
+}
+.stars input:checked~ label{
+    color:black;
+    text-shadow: 1px 1px rgb(240, 75, 10);
+
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover~ label
+{
+    color:black;
+}
+.stars:input:checked > label:hover,
+.stars:input:checked > label:hover~ label{
+    color: black;
+    text-shadow: 1px 1px rgb(240, 75, 10);
+}
+.stars .result:before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-30px;
+    font-size: 30px;
+    font-weight: bold;
+    color:crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+.stars input:checked~ .result:before{
+    display: block;
+}
+.stars #five:checked~ .result:before{
+    content: "I LOVE IT 😍";
+}
+.stars #four:checked~ .result:before{
+    content: "I LIKE IT 😎";
+}
+.stars #three:checked~ .result:before{
+    content: "IT'S GOOD 😊";
+}
+.stars #two:checked~ .result:before{
+    content: "BAD 😕";
+}
+
+.stars #one:checked~ .result:before{
+    content: "I HATE IT 😡";
+}
+  .footer{
+    background-color: #2e2e2e;
+    height: 120px;
+    margin-top: 15px;
+}
+.social ul{
+    display: flex;
+}
+.social img{
+    height: 40px;
+}
+.social ul li a{
+    padding: 15px;
+}
+.footer-menu p{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-content{
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top:10px;
+}
+.copyright p{
+    color:#b9b9b9;
+}
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
